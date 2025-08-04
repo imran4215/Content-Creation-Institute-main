@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-[98%] mx-auto mt-1">{children}</body>
+      <body className="md:w-[98%] mx-auto mt-1">{children}</body>
     </html>
   );
 }

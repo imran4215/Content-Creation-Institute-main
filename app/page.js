@@ -1,14 +1,14 @@
 import React from "react";
-import HeaderTop from "./components/Header/HeaderTop";
-import HeaderMiddle from "./components/Header/HeaderMiddle";
-import HeaderLower from "./components/Header/HeaderLower";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import Courses from "./components/Courses";
 
 export default function Home() {
   return (
     <>
-      <HeaderTop />
-      <HeaderMiddle />
-      <HeaderLower />
+      <Navbar />
+      <HeroSection />
+      <Courses />
     </>
   );
 }

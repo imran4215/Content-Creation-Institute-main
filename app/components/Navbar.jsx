@@ -7,7 +7,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import Image from "next/image";
 import logo from "@/public/logo.png";
 
-export default function HeaderLower() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -23,7 +23,7 @@ export default function HeaderLower() {
 
   const navLinks = [
     { path: "/", name: "হোম" },
-    { path: "/courses", name: "কোর্স সমূহ" },
+    { path: "/courses", name: "কোর্সসমূহ" },
     { path: "/shop", name: "শপ" },
     { path: "/gallery", name: "গ্যালারি" },
     { path: "/blog", name: "ব্লগ" },
@@ -54,7 +54,7 @@ export default function HeaderLower() {
           : "shadow-md bg-white"
       } transition-all duration-300`}
     >
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-4 py-2 md:py-4">
         <div className="flex justify-between items-center">
           {/* Logo and Title */}
           <div className="flex items-center md:ml-7">
@@ -62,10 +62,8 @@ export default function HeaderLower() {
               <Image
                 src={logo}
                 alt="Logo"
-                loading="eager"
                 placeholder="blur"
-                className="h-12 w-full object-contain"
-                priority
+                className="h-8 md:h-12 w-full object-contain"
               />
             </Link>
           </div>
@@ -127,9 +125,9 @@ export default function HeaderLower() {
               animate="open"
               exit="closed"
               variants={mobileMenuVariants}
-              className="md:hidden mt-4 pb-4"
+              className="absolute top-full left-0 w-full bg-white z-40 shadow-md px-4 pb-4"
             >
-              <ul className="flex flex-col gap-3 text-lg font-semibold">
+              <ul className="flex flex-col  text-lg font-semibold mt-5">
                 {navLinks.map((link) => (
                   <motion.li
                     key={link.path}
