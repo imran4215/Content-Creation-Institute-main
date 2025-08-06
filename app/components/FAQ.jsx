@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { FAQData } from "../Data/FaqData";
+import { FAQData } from "@/app/Data/FAQData";
 import { FaChevronDown } from "react-icons/fa";
 
 export default function FAQ() {
