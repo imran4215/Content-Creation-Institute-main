@@ -25,24 +25,22 @@ export default function Courses() {
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-xl md:text-3xl font-bold text-blue-800 relative inline-block">
             এক নজরে আমাদের কোর্সসমূহ
-            <span className="absolute bottom-0 left-0 w-full h-1 md:h-1.5 bg-blue-500 transform translate-y-2 scale-x-75"></span>
+            <span className="absolute bottom-0 left-0 w-full h-1 md:h-1.5 bg-blue-500 transform translate-y-2 scale-x-75 rounded-full"></span>
           </h2>
         </div>
 
         {/* Custom Navigation Buttons */}
         <div
           ref={prevRef}
-          className="absolute left-0 top-[60%] transform -translate-y-1/2 z-10 p-3 bg-white border-2 border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white cursor-pointer transition"
+          className="absolute left-0 top-[50%] transform -translate-y-1/2 z-10 p-3 bg-white border-2 border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white cursor-pointer transition hidden md:flex items-center justify-center"
         >
-          <FaChevronLeft className="block md:hidden" size={8} />
-          <FaChevronLeft className="hidden md:block" size={15} />
+          <FaChevronLeft size={15} />
         </div>
         <div
           ref={nextRef}
-          className="absolute right-0 top-[60%] transform -translate-y-1/2 z-10 p-3 bg-white border-2 border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white cursor-pointer transition"
+          className="absolute right-0 top-[50%] transform -translate-y-1/2 z-10 p-3 bg-white border-2 border-blue-600 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white cursor-pointer transition hidden md:flex items-center justify-center"
         >
-          <FaChevronRight className="block md:hidden" size={8} />
-          <FaChevronRight className="hidden md:block" size={15} />
+          <FaChevronRight size={15} />
         </div>
 
         {/* Swiper */}
@@ -65,7 +63,7 @@ export default function Courses() {
               slidesPerView: 4,
             },
           }}
-          pagination={{ clickable: true }}
+          pagination={{ clickable: true, dynamicBullets: true }}
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current,

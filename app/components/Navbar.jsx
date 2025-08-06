@@ -63,7 +63,7 @@ export default function Navbar() {
                 src={logo}
                 alt="Logo"
                 placeholder="blur"
-                className="h-8 md:h-12 w-full object-contain"
+                className="h-8 md:h-10 w-full object-contain"
               />
             </Link>
           </div>
@@ -75,13 +75,14 @@ export default function Navbar() {
                 <li key={link.path} className="relative group">
                   <Link
                     href={link.path}
-                    className="px-2 py-1 text-gray-800 group-hover:text-blue-700 transition-colors duration-300"
+                    className="px-2 py-1 text-gray-700 group-hover:text-blue-700 transition-all duration-300 ease-in-out transform group-hover:scale-105"
                   >
                     {link.name}
                   </Link>
+
                   <motion.span
                     layoutId="underline"
-                    className="absolute left-0 -bottom-0.5 h-0.5 w-full bg-blue-700 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                    className="absolute left-0 bottom-0 h-0.5 w-full scale-x-0 group-hover:scale-x-100 origin-left bg-blue-700 transition-transform duration-300 ease-in-out"
                   />
                 </li>
               ))}
@@ -90,13 +91,6 @@ export default function Navbar() {
 
           {/* Buttons */}
           <div className="hidden md:flex gap-3">
-            <Link
-              href="/addmission-form"
-              className="text-white bg-blue-600 px-4 py-2 rounded-full shadow-md font-semibold text-sm hover:bg-blue-700 transition-all duration-200 hover:shadow-lg"
-              prefetch={false}
-            >
-              ভর্তি ফর্ম
-            </Link>
             <Link
               href="/login"
               className="text-blue-600 bg-white border-2 border-blue-600 px-4 py-2 rounded-full shadow-md font-semibold text-sm hover:bg-blue-600 hover:text-white transition-all duration-200 hover:shadow-lg"
@@ -146,14 +140,6 @@ export default function Navbar() {
                 ))}
               </ul>
               <div className="flex gap-3 mt-4 px-4">
-                <Link
-                  href="/addmission-form"
-                  className="flex-1 text-center text-white bg-blue-600 px-4 py-2 rounded-full shadow-md font-semibold text-sm hover:bg-blue-700 transition-all duration-200"
-                  onClick={() => setIsOpen(false)}
-                  prefetch={false}
-                >
-                  ভর্তি ফর্ম
-                </Link>
                 <Link
                   href="/login"
                   className="flex-1 text-center text-blue-600 bg-white border-2 border-blue-600 px-4 py-2 rounded-full shadow-md font-semibold text-sm hover:bg-blue-600 hover:text-white transition-all duration-200"

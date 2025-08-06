@@ -52,35 +52,59 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Modal */}
       {isOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center z-50"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-xs px-4 py-6"
           onClick={closeModal}
         >
-          {/* Close Button */}
-          <button
-            onClick={closeModal}
-            className="absolute top-5 right-6 text-black text-4xl font-bold z-50 hover:text-gray-400 cursor-pointer"
-            aria-label="Close video"
-          >
-            &times;
-          </button>
-
-          {/* Modal Box */}
+          {/* Modal Container */}
           <div
-            className="w-[90%] md:w-[80%] max-w-5xl bg-white rounded-lg shadow-2xl overflow-hidden scale-100 transition-transform duration-300 md:p-3"
+            className="relative w-full max-w-5xl bg-white rounded-xl shadow-2xl overflow-hidden animate-fade-in scale-100 transition-transform duration-300"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="aspect-video w-full">
+            {/* Modal Header */}
+            <div className="flex justify-between items-center p-2 bg-blue-50 border-b border-gray-200">
+              <h2 className="text-xl font-bold text-blue-800">
+                আমাদের সম্পর্কে
+              </h2>
+              <button
+                onClick={closeModal}
+                className="p-2 rounded-full hover:bg-gray-200 transition duration-200 focus:outline-none"
+                aria-label="Close modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-gray-600 hover:text-gray-800"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            {/* Video Content */}
+            <div className="relative pt-[56.25%] bg-black">
               <iframe
-                className="w-full h-full"
+                className="absolute top-0 left-0 w-full h-full"
                 src="https://www.youtube.com/embed/TjueQTpN1gc?start=746&autoplay=1"
-                title="YouTube video player"
+                title="About Us Video"
                 frameBorder="0"
                 allow="autoplay; encrypted-media; picture-in-picture"
                 allowFullScreen
-              ></iframe>
+              />
+            </div>
+
+            {/* Optional Footer */}
+            <div className="bg-gray-50 p-4 text-sm text-center text-gray-600">
+              আমাদের সম্পর্কে জানুন, আমরা কীভাবে কাজ করি এবং শিক্ষার্থীদের
+              সফলতায় ভূমিকা রাখি।
             </div>
           </div>
         </div>
