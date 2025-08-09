@@ -24,7 +24,7 @@ export default function Navbar() {
   const navLinks = [
     { path: "/", name: "হোম" },
     { path: "/courses", name: "কোর্সসমূহ" },
-    { path: "/shop", name: "শপ" },
+    { path: "/studio", name: "স্টুডিও" },
     { path: "/gallery", name: "গ্যালারি" },
     { path: "/blog", name: "ব্লগ" },
     { path: "/contact", name: "যোগাযোগ" },

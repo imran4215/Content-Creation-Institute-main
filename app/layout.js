@@ -1,5 +1,7 @@
 import Head from "next/head";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Content Creation Institute",
@@ -11,8 +13,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html>
+      <Navbar />
       <body className="md:w-[98%] mx-auto mt-1">{children}</body>
+      <Footer />
     </html>
   );
 }
