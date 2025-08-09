@@ -151,8 +151,10 @@ export default function SuccessStory() {
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Header */}
-              <div className="flex justify-between items-center p-2 bg-blue-50 border-b border-gray-200">
-                <h2 className="text-xl font-bold text-blue-800">সফলতার গল্প</h2>
+              <div className="flex justify-between items-center px-4 md:py-2 bg-blue-50 border-b border-gray-200">
+                <h2 className="md:text-xl font-bold text-blue-800">
+                  সফলতার গল্প
+                </h2>
                 <button
                   onClick={closeModal}
                   className="p-2 rounded-full hover:bg-gray-200 transition duration-200 focus:outline-none"
@@ -188,7 +190,7 @@ export default function SuccessStory() {
               </div>
 
               {/* Footer Message */}
-              <div className="bg-gray-50 p-4 text-sm text-center text-gray-600">
+              <div className="bg-gray-50 p-2 text-xs md:text-sm text-center text-gray-600">
                 আমাদের শিক্ষার্থীদের সাফল্য আমাদের গর্ব
               </div>
             </div>

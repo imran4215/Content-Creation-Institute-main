@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 
 export default function StudentReview() {
   return (
-    <section className="bg-white md:py-12 px-14 sm:px-6 lg:px-8">
+    <section className="bg-white px-6 py-6 lg:px-8">
       <div className="md:max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-8 md:mb-10">

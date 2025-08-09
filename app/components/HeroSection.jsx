@@ -22,12 +22,12 @@ export default function HeroSection() {
         <h1 className="text-lg md:text-2xl font-medium">
           আর্নিং নির্ভর স্কিল শিখুন
         </h1>
-        <h2 className="text-[22px] md:text-4xl font-extrabold leading-tight">
+        <h2 className="text-[22px] md:text-4xl font-extrabold leading-tight -mt-2">
           কনটেন্ট ক্রিয়েশন ইনস্টিটিউটে
         </h2>
         <Link href="/courses">
           <button className="p-2 md:p-3 mt-1 bg-white text-blue-500 font-bold rounded-lg hover:bg-blue-700 hover:text-white transition duration-300 cursor-pointer">
-            এখনই এনরোল করুন
+            কোর্সে এনরোল করুন
           </button>
         </Link>
       </div>
@@ -63,8 +63,8 @@ export default function HeroSection() {
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
-            <div className="flex justify-between items-center p-2 bg-blue-50 border-b border-gray-200">
-              <h2 className="text-xl font-bold text-blue-800">
+            <div className="flex justify-between items-center px-4 md:py-2 bg-blue-50 border-b border-gray-200">
+              <h2 className="md:text-xl font-bold text-blue-800">
                 আমাদের সম্পর্কে
               </h2>
               <button
@@ -102,7 +102,7 @@ export default function HeroSection() {
             </div>
 
             {/* Optional Footer */}
-            <div className="bg-gray-50 p-4 text-sm text-center text-gray-600">
+            <div className="bg-gray-50 p-2 text-xs md:text-sm text-center text-gray-600">
               আমাদের সম্পর্কে জানুন, আমরা কীভাবে কাজ করি এবং শিক্ষার্থীদের
               সফলতায় ভূমিকা রাখি।
             </div>

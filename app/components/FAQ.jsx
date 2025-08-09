@@ -14,11 +14,11 @@ export default function FAQ() {
   };
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 bg-gray-50 py-12">
+    <section className="px-4 sm:px-6 lg:px-8 bg-gray-50 py-6 md:py-12">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-blue-800 relative inline-block">
+          <h2 className="text-lg sm:text-3xl font-bold text-blue-800 relative inline-block">
             আপনি কি এই প্রশ্নগুলো করতে চাচ্ছেন?
             <span className="absolute bottom-0 left-0 w-full h-1 md:h-1.5 bg-blue-500 transform translate-y-2 scale-x-75 rounded-full"></span>
           </h2>
@@ -37,13 +37,13 @@ export default function FAQ() {
                 {/* Question Button */}
                 <button
                   onClick={() => toggleAnswer(index)}
-                  className={`w-full flex justify-between items-center px-6 py-4 text-left focus:outline-none transition-colors duration-300 cursor-pointer ${
+                  className={`w-full flex justify-between items-center px-2 pl-5 md:px-6 py-4 text-left focus:outline-none transition-colors duration-300 cursor-pointer ${
                     isActive
                       ? "bg-blue-600 text-white"
                       : "hover:bg-blue-50 text-gray-800"
                   }`}
                 >
-                  <span className="text-base sm:text-lg font-semibold">
+                  <span className="text-[16px] sm:text-lg font-semibold">
                     {item.question}
                   </span>
                   {/* Animated Icon */}
@@ -62,7 +62,7 @@ export default function FAQ() {
                     isActive ? "max-h-[500px] py-4" : "max-h-0"
                   }`}
                 >
-                  <p className="text-gray-700 text-sm sm:text-base">
+                  <p className="text-gray-600 text-sm sm:text-base">
                     {item.answer}
                   </p>
                 </div>

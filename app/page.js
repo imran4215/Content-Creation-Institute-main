@@ -6,6 +6,8 @@ import SuccessStory from "./components/SuccessStory";
 import Services from "./components/Services";
 import FAQ from "./components/FAQ";
 import StudentReview from "./components/StudentReview";
+import AboutUs from "./components/AboutUs";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <Services />
       <FAQ />
       <StudentReview />
+      <AboutUs />
+      <Footer />
     </>
   );
 }
