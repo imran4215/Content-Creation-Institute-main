@@ -12,6 +12,7 @@ import {
 import { GiNotebook } from "react-icons/gi";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 // Dynamic imports for framer-motion
 const MotionDiv = dynamic(
@@ -76,10 +77,10 @@ export default function CoursePage() {
         />
       </Head>
 
-      <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-white py-6 md:py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <h1 className="text-3xl font-bold text-blue-800 sm:text-4xl">
               আমাদের কোর্সসমূহ
             </h1>
@@ -177,12 +178,13 @@ export default function CoursePage() {
                   </div>
 
                   {/* View Details Button */}
+
                   <MotionButton
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-colors duration-300"
                   >
-                    View Details
+                    <Link href="/courseDetails">View Details</Link>
                   </MotionButton>
                 </div>
               </MotionDiv>
