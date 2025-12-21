@@ -20,7 +20,7 @@ export default function CourseIntro() {
       {/* Title Section */}
       <div className="bg-gradient-to-r md:pt-9 from-blue-600 to-purple-600 md:p-6 text-white mb-5 rounded-lg p-3">
         <h1 className="text-xl md:text-4xl font-bold">
-          MERN Stack Web Development
+          Professional Video Editing Course
         </h1>
       </div>
 

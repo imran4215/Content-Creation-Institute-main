@@ -27,7 +27,7 @@ export default function Navbar() {
     { path: "/studio", name: "স্টুডিও" },
     { path: "/gallery", name: "গ্যালারি" },
     { path: "/blog", name: "ব্লগ" },
-    { path: "/contact", name: "যোগাযোগ" },
+    { path: "/contact-us", name: "যোগাযোগ" },
   ];
 
   const mobileMenuVariants = {

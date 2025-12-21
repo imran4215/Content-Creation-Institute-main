@@ -34,7 +34,7 @@ export default function HeroSection() {
 
       {/* Right Side */}
       <div className="flex items-center justify-center px-6 py-6 md:py-0">
-        <div className="relative -full md:w-4/5 h-64 md:h-80 aspect-video shadow-2xl rounded-xl overflow-hidden">
+        <div className="relative -full h-55 md:h-80 aspect-video shadow-2xl rounded-xl overflow-hidden">
           <Image
             src={AboutUs}
             alt="About Us"
@@ -45,7 +45,7 @@ export default function HeroSection() {
           <div className="absolute inset-0 z-20 flex items-center justify-center">
             <Lottie
               animationData={PlayButton}
-              className="h-[100px] md:h-[150px] cursor-pointer"
+              className="h-[130px] md:h-[150px] cursor-pointer"
               onClick={openModal}
             />
           </div>
@@ -93,7 +93,7 @@ export default function HeroSection() {
             <div className="relative pt-[56.25%] bg-black">
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/TjueQTpN1gc?start=746&autoplay=1"
+                src="https://www.youtube.com/embed/YEdPCvT_Pxc?si=XzTSXAPyiskklCmT"
                 title="About Us Video"
                 frameBorder="0"
                 allow="autoplay; encrypted-media; picture-in-picture"

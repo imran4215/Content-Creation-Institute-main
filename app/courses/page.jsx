@@ -27,8 +27,8 @@ const MotionButton = dynamic(
 const courses = [
   {
     id: 1,
-    batch: "Batch-5",
-    title: "MERN Stack Web Development Career Path",
+    batch: "Batch-13",
+    title: "Professional Video Editing Course",
     image: "/Courses/Video_Editing.jpg",
     rating: 4.7,
     ratingCount: 43,
@@ -40,9 +40,9 @@ const courses = [
   },
   {
     id: 2,
-    batch: "Batch-5",
-    title: "DevOps Career Path",
-    image: "/Courses/Video_Editing.jpg",
+    batch: "Batch-7",
+    title: "Professional Motion Graphics Course",
+    image: "/Courses/Motion_Graphic.jpg",
     rating: 4.9,
     ratingCount: 18,
     type: "recorded",
@@ -53,9 +53,9 @@ const courses = [
   },
   {
     id: 3,
-    batch: "Batch-12",
-    title: "Web Development with Python, Django & React",
-    image: "/Courses/Video_Editing.jpg",
+    batch: "Batch-5",
+    title: "3D Animation Course",
+    image: "/Courses/3d_Animation.jpg",
     rating: 4.6,
     ratingCount: 18,
     type: "live",

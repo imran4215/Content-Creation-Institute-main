@@ -132,7 +132,7 @@ export default function Footer() {
         </div>
         <div className="flex gap-6 items-center text-lg">
           <a
-            href="https://www.facebook.com/solutionitcare"
+            href="https://www.facebook.com/ContentCreationInstitute"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -141,7 +141,7 @@ export default function Footer() {
             <FaFacebook />
           </a>
           <a
-            href="https://www.youtube.com/@solutionitcare"
+            href="https://www.youtube.com/@ContentCreationInstitute"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
