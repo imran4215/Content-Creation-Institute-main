@@ -69,7 +69,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/terms-and-conditions"
+                href="/studio"
                 className="flex items-center gap-2 hover:text-blue-600 transition-colors"
               >
                 <FaVideo className="text-blue-500" />

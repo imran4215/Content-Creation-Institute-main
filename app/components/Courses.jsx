@@ -12,6 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import Link from "next/link";
 
 export default function Courses() {
   const swiperRef = useRef(null);
@@ -98,9 +99,11 @@ export default function Courses() {
                       <span className="text-lg font-semibold text-blue-600">
                         {course.price}
                       </span>
-                      <button className="px-4 py-2 border-2 border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-600 hover:text-white transition-colors duration-300 cursor-pointer">
-                        বিস্তারিত দেখুন
-                      </button>
+                      <Link href="/courseDetails" passHref>
+                        <button className="px-4 py-2 border-2 border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-600 hover:text-white transition-colors duration-300 cursor-pointer">
+                          বিস্তারিত দেখুন
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

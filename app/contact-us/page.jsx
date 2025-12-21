@@ -10,6 +10,7 @@ import {
   Instagram,
   Linkedin,
   Twitter,
+  Youtube,
 } from "lucide-react";
 
 export default function ContactPage() {
@@ -48,7 +49,7 @@ export default function ContactPage() {
       icon: Facebook,
       name: "Facebook",
       color: "hover:bg-blue-600 hover:shadow-blue-200",
-      url: "#",
+      url: "https://www.facebook.com/ContentCreationInstitute",
     },
     {
       icon: Instagram,
@@ -63,10 +64,10 @@ export default function ContactPage() {
       url: "#",
     },
     {
-      icon: Twitter,
-      name: "Twitter",
+      icon: Youtube,
+      name: "Youtube",
       color: "hover:bg-blue-400 hover:shadow-blue-200",
-      url: "#",
+      url: "https://www.youtube.com/@ContentCreationInstitute",
     },
   ];
 
@@ -181,6 +182,8 @@ export default function ContactPage() {
                   <a
                     key={index}
                     href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`p-3 bg-gray-100 rounded-lg transition-all duration-300 hover:text-white hover:shadow-lg hover:scale-110 hover:-translate-y-1 ${social.color} group relative overflow-hidden`}
                     aria-label={social.name}
                   >
