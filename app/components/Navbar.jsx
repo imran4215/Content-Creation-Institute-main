@@ -90,13 +90,23 @@ export default function Navbar() {
           </nav>
 
           {/* Buttons */}
-          <div className="hidden md:flex gap-3">
+          {/* <div className="hidden md:flex gap-3">
             <Link
               href="/login"
               className="text-blue-600 bg-white border-2 border-blue-600 px-4 py-2 rounded-full shadow-md font-semibold text-sm hover:bg-blue-600 hover:text-white transition-all duration-200 hover:shadow-lg"
               prefetch={false}
             >
               লগিন/সাইনআপ
+            </Link>
+          </div> */}
+
+          <div className="hidden md:flex gap-3">
+            <Link
+              href="/admission-form"
+              className="text-blue-600 bg-white border-2 border-blue-600 px-10 py-2 mr-5 rounded-full shadow-md font-semibold  hover:bg-blue-600 hover:text-white transition-all duration-200 hover:shadow-lg"
+              prefetch={false}
+            >
+              ভর্তি ফর্ম
             </Link>
           </div>
 
@@ -139,7 +149,8 @@ export default function Navbar() {
                   </motion.li>
                 ))}
               </ul>
-              <div className="flex gap-3 mt-4 px-4">
+              {/* mobile menu buttons */}
+              {/* <div className="flex gap-3 mt-4 px-4">
                 <Link
                   href="/login"
                   className="flex-1 text-center text-blue-600 bg-white border-2 border-blue-600 px-4 py-2 rounded-full shadow-md font-semibold text-sm hover:bg-blue-600 hover:text-white transition-all duration-200"
@@ -147,6 +158,16 @@ export default function Navbar() {
                   prefetch={false}
                 >
                   লগিন/সাইনআপ
+                </Link>
+              </div> */}
+              <div className="flex gap-3 mt-4 px-4">
+                <Link
+                  href="/admission-form"
+                  className="flex-1 text-center text-blue-600 bg-white border-2 border-blue-600 px-4 py-2 rounded-full shadow-md font-semibold text-sm hover:bg-blue-600 hover:text-white transition-all duration-200"
+                  onClick={() => setIsOpen(false)}
+                  prefetch={false}
+                >
+                  ভর্তি ফর্ম
                 </Link>
               </div>
             </motion.div>

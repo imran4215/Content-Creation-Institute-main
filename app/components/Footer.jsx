@@ -60,7 +60,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/professional-courses"
+                href="/terms-&-conditions"
                 className="flex items-center gap-2 hover:text-blue-600 transition-colors"
               >
                 <FaShieldAlt className="text-blue-500" />
